@@ -1,0 +1,38 @@
+{
+  "name": "periquitosvaldo-website",
+  "version": "1.0.0",
+  "description": "Website Periquitosvaldo.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "mailsender": "node email/index.js"
+  },
+  "keywords": [
+    "Discord",
+    "Discord.js",
+    "Express",
+    "Server",
+    "Dashboard",
+    "ejs",
+    "express-session",
+    "firebase",
+    "node-fetch",
+    "paypal-rest-sdk"
+  ],
+  "author": "TiaGoiNsaNy",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "firebase": "^8.3.0",
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.5.0",
+    "parse-ms": "^2.1.0",
+    "paypal-rest-sdk": "^1.8.1"
+  }
+}

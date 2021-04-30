@@ -1,0 +1,16 @@
+{
+	"name": {
+		"botlist": "BotList",
+		"config": "Configurações",
+		"social": "Sociedade",
+		"utils": "Utilidades",
+		"dev": "Desenvolvimento"
+	},
+	"icon": {
+		"botlist": "fa fa-rocket",
+		"config": "fa fa-cog",
+		"social": "fa fa-money",
+		"utils": "fa fa-search",
+		"dev": "fa fa-wrench"
+	}
+}

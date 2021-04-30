@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title-donate {
+    margin-top: 20px;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    cursor: pointer;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+.list {
+    border-top: solid 1px #fff;
+    padding: 30px;
+    background-color: rgb(96, 172, 248);
+    background-size: 70px;
+    transition-duration: 0.5s;
+}
+
+.list .card-row {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    transition-duration: 0.5s;
+}
+
+.list .card-row .card {
+    width: 80%;
+    max-width: 250px;
+    padding: 35px 20px 35px 20px;
+    background-color: #301f2b;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: CardAnimatio 6s ease-in-out infinite;
+    transition-duration: 0.5s;
+}
+
+@keyframes CardAnimatio {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform:  translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.list .card-row .card h1 {
+    text-align: center;
+    color: rgb(96, 172, 248);
+    margin-bottom: 10px;
+    font-size: 150%;
+    font-family: Montserrat;
+}
+
+.list .card-row .card a {
+	text-align: center;
+}
+
+.list .card-row .card a button {
+	background-color: #43B581;
+	padding: 10px 10px 10px 10px;
+	border: none;
+	cursor: pointer;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 120%;
+    font-family: Montserrat;
+    transition-duration: 0.5s;
+}
+
+.list .card-row .card a button:hover {
+	background-color: #67C399;
+	transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 350px) {
+    .list {
+    	padding: 5%;
+    	transition-duration: 0.5s;
+    }
+
+    .list .card-row {
+    	display: block;
+    	transition-duration: 0.5s;
+    }
+
+    .list .card-row .card {
+    	width: 100%;
+    	transition-duration: 0.5s;
+    }
+}

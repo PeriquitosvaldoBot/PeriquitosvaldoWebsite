@@ -1,0 +1,20 @@
+{
+    "port": "8081",
+    "domain": "https://www.periquitosvaldo.ga",
+    "oauth2": {
+        "redirect_uri": "https://www.periquitosvaldo.ga/login/callback",
+        "client_id": "719557072429252618",
+        "scopes": ["identify"]
+    },
+    "session": {
+        "secret": "parrot-secret",
+        "cookie": {
+            "maxAge": 604800000
+        },
+        "resave": true,
+        "saveUninitialized": false
+    },
+    "discord": {
+        "server_id": "799477005627555890"
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Discord, Bot, Dashboard, App, Server, Parrot, Painel, Servidor">
+
+    <meta property="og:title" content="Periquitosvaldo - Discord Bot">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A Melhor Aplicação para o seu Servidor Discord!">
+    <meta property="og:locale" content="pt-BR">
+    <meta property="og:url" content="/support">
+    <meta property="og:site_name" content="Periquitosvaldo Website">
+    <meta property="og:image" content="/assets/banner.png">
+
+    <link rel="shortcut icon" href="/assets/icon.ico" type="image/ico" />
+
+    <meta name="theme-color" content="#008000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#008000">
+    <meta name="msapplication-navbutton-color" content="#008000">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@TiaGoiNsaNy">
+    <meta name="twitter:creator" content="@TiaGoiNsaNy">
+    <meta name="twitter:title" content="Periquitosvaldo - Discord Bot">
+    <meta name="twitter:description" content="A Melhor Aplicação para o seu Servidor Discord!">
+    <meta name="twitter:image:src" content="/assets/banner.png">
+
+    <meta name="author" content="TiaGoiNsaNy">
+    <meta name="copyright" content="TiaGoiNsaNy">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/styles/body.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <title>Periquitosvaldo | Inicial</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img
+                src="https://cdn.discordapp.com/avatars/719557072429252618/e8b67685bc1a2686a7de6873d5861b5e.png?size=256"
+                alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/support">Suporte</a></li>
+                <li><a href="/commands">Comandos</a></li>
+                <li><a href="/about">Sobre</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="/login">Login</a>
+        <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="/support">Suporte</a>
+            <a href="/commands">Comandos</a>
+            <a href="/about">Sobre</a>
+            <a href="/login">Login</a>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h1>Periquitosvaldo</h1>
+        <h4>Turbine o seu Servidor Agora!</h4>
+        <div class="buttons">
+            <button><a href="/add"><i class="fa fa-plus"></i> Adicionar</a></button>
+            <button><a href="/support"><i class="fa fa-phone"></i> Suporte</a></button>
+            <br><button><a href="/login"><i class="fa fa-sign-in"></i> Login</a></button>
+        </div>
+    </div>
+
+    <div class="features">
+        <h1 class="title">Funcionalidades</h1>
+        <p class="description">Funcionalidades que o Periquitosvaldo possui para melhorar o seu Servidor!</p>
+        <div class="card-row">
+            <% for (let i = 0; i < features.length; i++) {%>
+                <div class="card">
+                    <h1><%= features[i].title %></h1>
+                    <p><%= features[i].description %></p>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="/twitter"><i class="fab fa-twitter"></a></i>
+            <a href="/github"><i class="fab fa-github"></i></a>
+            <a href="/support"><i class="fab fa-discord"></i></a>
+        </div>
+        <p class="copy">&copy; 2021 Periquitosvaldo Bot | Todos os Direitos Reservados.</p>
+        <p class="designer">Website by TiaGoiNsaNy</p>
+    </footer>
+    <script src="../../scripts/screamMobile.js"></script>
+</body>
+
+</html>

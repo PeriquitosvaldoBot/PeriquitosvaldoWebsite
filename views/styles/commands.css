@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500&display=swap);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title-commands-list {
+    margin-top: 20px;
+    margin-bottom: 5%;
+    text-align: center;
+    color: #fff;
+    font-family: Montserrat;
+    cursor: pointer;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(2deg);
+    }
+}
+
+.commands-list {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.commands-list .category {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #4b3543;
+    border-radius: 10px;
+    opacity: 0.7;
+    transition-duration: 0.5s;
+}
+
+.commands-list .category:hover {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.commands-list .category .category-name {
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: indianred;
+    transition-duration: 0.5s;
+}
+
+.commands-list .category .category-name .name {
+    color: #fff;
+    font-family: Montserrat;
+}
+
+.commands-list .category .commands {
+    padding: 10px;
+}
+
+.commands-list .category .commands .command-name {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 1%;
+}
+
+.commands-list .category .commands .command-name code {
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #301f2b;
+    padding: 3px 5px 3px 5px;
+    transition-duration: 0.5s;
+}
+
+.commands-list .category .commands .command-name code:hover {
+    background-color: #493043;
+    transition-duration: 0.5s;
+}
+
+.commands-list .category .commands .command-name code:active {
+    background-color: #A52A2A;
+    cursor: copy;
+    transition-duration: 0.1s;
+}
+
+@media only screen and (max-width: 350px) {
+    .commands-list .category {
+        width: 100%;
+        border-radius: 0px;
+        transition-duration: 0.5s;
+    }
+
+    .commands-list .category .category-name {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        transition-duration: 0.5s;
+    }
+}
